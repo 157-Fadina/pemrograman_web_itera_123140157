@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    </head>
+<body>
+
+    <header>
+        <h1>My Personal Dashboard</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>Now</h2>
+            <div id="clock">00:00:00</div>
+            <div id="date">Memuat...</div>
+        </div>
+        <div>
+            <h2>Quote of the Day</h2>
+            <p id="quote-text">"Memuat kutipan..."</p>
+            <small id="quote-author"></small>
+        </div>
+        
+        <div>
+            <h2>To Do List</h2>
+            
+            <form id="todo-form">
+                <div>
+                    <label for="todo-title">Judul Tugas:</label>
+                    <input type="text" id="todo-title" placeholder="Judul tugas..." required>
+                </div>
+                <br>
+                <div>
+                    <label for="todo-desc">Deskripsi:</label>
+                    <input type="text" id="todo-desc" placeholder="Deskripsi singkat...">
+                </div>
+                <br>
+                <div>
+                    <label for="todo-start">Tgl Mulai:</label>
+                    <input type="date" id="todo-start">
+                
+                    <label for="todo-end">Tgl Selesai:</label>
+                    <input type="date" id="todo-end">
+                </div>
+                <br>
+                <button type="submit">Tambah</button>
+            </form>
+            
+            <hr> <ul id="todo-list">
+                </ul>
+        </div>
+
+    </main>
+
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>

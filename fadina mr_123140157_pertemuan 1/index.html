@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Ngerjain Tugas!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Manajemen Tugas Kuliah</h1>
+        <p>Apakah kamu sudah mengerjakan tugas hari ini...</p>
+
+        <form id="task-form" class="task-form">
+            <div class="form-group">
+                <label for="task-name">Nama Tugas</label>
+                <input type="text" id="task-name" placeholder="Contoh: Tugas Kelompok" required>
+            </div>
+            <div class="form-group">
+                <label for="course-name">Mata Kuliah</label>
+                <input type="text" id="course-name" placeholder="Contoh: Inteligensi Buatan " required>
+            </div>
+            <div class="form-group">
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" required>
+            </div>
+            <button type="submit">Tambah Tugas</button>
+        </form>
+
+        <div class="filters-stats">
+            <div class="filters">
+                <select id="filter-status">
+                    <option value="all">Semua Status</option>
+                    <option value="incomplete">Belum Selesai</option>
+                    <option value="completed">Selesai</option>
+                </select>
+                <input type="text" id="search-course" placeholder="Cari mata kuliah...">
+            </div>
+            <div class="stats">
+                <span>Tugas Belum Selesai: <strong id="incomplete-count">0</strong></span>
+            </div>
+        </div>
+        
+        <ul id="task-list">
+            </ul>
+    </div>
+
+    <div id="pop-up notification" class="popup"></div>
+    <script src="script.js"></script>
+</body>
+</html>
